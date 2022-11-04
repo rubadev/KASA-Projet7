@@ -1,0 +1,46 @@
+.carousel{
+    width: 100%;
+    height: 420px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.carouselInner{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    display: flex;
+    border-radius: 25px;
+    
+}
+.left{
+    flex: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.right{
+   flex: 5%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+    align-items: center;
+    color: white;
+}
+.center{
+    height: 100%;
+    flex: 90%;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    color: white;
+}
+
+@media screen and (max-width:600px) {
+    .carousel{
+        height: 230px;
+    }
+}

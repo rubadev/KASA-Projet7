@@ -1,0 +1,26 @@
+.tagDiv{
+    display: flex;
+    color: #fff;
+    
+}
+.tagP{
+    width:100px;
+    text-align: center;
+    background-color: #ff6060;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 12px;
+}
+@media screen and (max-width:900px) {
+    .tagP{
+        width: 100px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:500px) {
+    .tagP{
+        width: 95px;
+        font-size: 10px;
+    }
+}

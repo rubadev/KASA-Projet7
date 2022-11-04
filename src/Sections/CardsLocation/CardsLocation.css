@@ -1,0 +1,70 @@
+.card{
+    width: 23%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+    
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+.CardsBackground{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:20px;
+    margin-bottom: 50px;
+    padding: 0;
+}
+.tittleLog{
+    width: 90%;
+    color: white;
+    font-size: 20px;
+    margin-top: -60px;
+    margin-left: 10px;
+    filter: drop-shadow(0 0 0.1rem black);
+}
+.logLink{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 1000px) {
+    .card{
+        width: 26%;
+        height: 250px;
+    }
+    .tittleLog{
+       
+        font-size: 16px;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 1230px) {
+    .tittleLog{
+        font-size: 16px;
+    }
+
+}
+@media screen and (max-width: 900px) {
+    .card{
+        width: 40%;
+        height: 200px;
+    }
+    .tittleLog{
+        font-size: 14px;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .card{
+        width: 100%;
+        height: 250px;
+    }
+    .tittleLog{
+        font-size: 18px;
+    }
+
+}

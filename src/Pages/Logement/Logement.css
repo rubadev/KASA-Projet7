@@ -1,0 +1,72 @@
+.blocInfo{
+    display: flex;
+    justify-content: space-between;
+    color: #FF6060;
+}
+
+.host{
+    display: flex;
+    align-items: center;
+}
+.host img{
+    width: 45%;
+    border-radius: 60px;
+    margin-bottom: 15px;
+}
+.host p{
+    width: 35%;
+    font-size: 16px;
+}
+.rating{
+    align-items: center;
+}
+
+.logementCollapses{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.logCol{
+    width: 45%;
+}
+
+
+@media screen and (max-width:900px) {
+    .blocInfo{
+        flex-direction: column;
+    }
+    .ratingHost{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .titleLoc h2{
+        font-size: 20px;
+    }
+    .titleLoc p{
+        font-size: 12px;
+    }
+    .host{
+        justify-content: end;
+    }
+    .host img{
+        width: 20%;
+        text-align: right;
+    }
+    .host p{
+        width: 25%;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .logementCollapses{
+        flex-direction: column;
+    }
+    .logCol{
+        width: 100%;
+    }
+    .rating{
+        width: 40%;
+    }
+}
