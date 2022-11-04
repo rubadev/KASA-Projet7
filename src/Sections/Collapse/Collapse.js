@@ -11,7 +11,13 @@ const Collapse = (props) => {
             <h2>{props.titlle}</h2>
             <span style={{"color" : '#fff'}}>{isOpen ? <FaAngleUp/> : <FaAngleDown/>}</span>
         </div>
-        <div className={isOpen? 'itemDescription': 'itemDescriptionNon'}>{props.description}</div>
+        <div className={isOpen? 'itemDescription': 'itemDescriptionNon'}>
+          {props.equipments ? <ul>{
+                    props.equipments.map((element, index)=>{
+                        return <li key ={`${index}-${props.id}`}>{element}</li>
+                    })
+                }</ul>
+                :<p>{props.description}</p>}</div>
         </div>
   );
 };

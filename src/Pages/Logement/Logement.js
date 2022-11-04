@@ -50,7 +50,7 @@ const Logement = () => {
           <Collapse titlle="Description" description={logement.description} />
         </div>
         <div className="logCol">
-          <Collapse titlle="equipments" description={logement.equipments} />
+          <Collapse titlle="Equipments" equipments={logement.equipments} />
         </div>
       </div>
     </>

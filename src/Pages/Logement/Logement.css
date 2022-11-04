@@ -29,6 +29,10 @@
 .logCol{
     width: 45%;
 }
+.logCol ul{
+    list-style-type: none;
+    padding: 0;
+}
 
 
 @media screen and (max-width:900px) {
