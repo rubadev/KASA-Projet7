@@ -9,7 +9,8 @@ const Carousel = () => {
   const [curentImg, setCurentImg] = useState(0);
   const logement = data.find((logement) => logement.id === id);
   const pictures = logement.pictures;
-  console.log("log", pictures[curentImg]);
+  
+  
   function setNextImg() {
     if (curentImg + 1 > pictures.length - 1) {
       setCurentImg(0);

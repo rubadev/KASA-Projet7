@@ -4,7 +4,7 @@ import {IoStarSharp} from "react-icons/io5";
 const Rating = (props) => {
     const rating = props.rating;
     const range = [1,2,3,4,5];
-    console.log('star',rating)
+    
   return (
 
     <div className='RatingIcons'>
