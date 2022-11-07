@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FaAngleDown,FaAngleUp } from "react-icons/fa";
 
 const Collapse = (props) => {
-    const [isOpen,setIsOpen] = useState(true)
+    const [isOpen,setIsOpen] = useState(false)
   return (
 
         <div className="item">

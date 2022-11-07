@@ -32,23 +32,31 @@ const Carousel = () => {
         className="carouselInner"
         style={{ backgroundImage: `url(${pictures[curentImg]})` }}
       >
-        <div
+        {pictures.length >1 ? <div
           className="left"
           onClick={() => {
             setPrevImg();
           }}
         >
           <AiOutlineLeft style={{ fontSize: 60 }} />
-        </div>
+        </div> : <div
+          className="left"
+        >
+          <AiOutlineLeft style={{ display : "none"}} />
+        </div>}
         <div className="center">{`${curentImg + 1}/${pictures.length}`}</div>
-        <div
+        {pictures.length >1 ? <div
           className="right"
           onClick={() => {
             setNextImg();
           }}
         >
           <AiOutlineRight style={{ fontSize: 60 }} />
-        </div>
+        </div>: <div
+          className="right"
+        >
+          <AiOutlineRight style={{ display : "none"}} />
+        </div>}
       </div>
     </div>
   );
